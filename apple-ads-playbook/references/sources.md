@@ -10,6 +10,28 @@ His older index of Apple Ads content (not updated in recent years): https://sear
 
 453 Apple Ads tweets, 2016-06 to 2026-11. Rules taken from them carry the tweet date in SKILL.md; the platform timeline in `evolution.md` comes from them.
 
+## Small-budget starting advice
+
+Thomas's replies to Ingo's question about a first experiment in the 11 Nov 2026 thread:
+
+- [Cheap discovery](https://x.com/Thomasbcn/status/2120624608214995082): very low bids,
+  Maximize Conversions or otherwise, with all brand variants excluded; works with any amount.
+- [Narrow Exact test](https://x.com/Thomasbcn/status/2120625086034255927): roughly 3–10
+  extremely relevant, likely medium- or low-volume keywords; isolate them, test bid level,
+  learn revenue per click, then bid a bit above.
+- [Illustrative sample and cost](https://x.com/Thomasbcn/status/2120625558170058838):
+  20 sales, 60 trials, 400 installs and 800 clicks; potentially several hundred dollars per
+  keyword in the US. Explicitly a random example, not a universal budget or sample target.
+- [Research and failure signals](https://x.com/Thomasbcn/status/2120626954890064159):
+  research before spending; low CTR and a powerful competitor locked in are bad signs;
+  X clicks with zero trials is a hard cut.
+- [More budget](https://x.com/Thomasbcn/status/2120627117259952364): with more budget he
+  shoots at everything and sees what sticks (workflow A).
+
+These shape workflow A1: narrow Exact test, cheap Discovery, bid from revenue per tap and
+the zero-start tap cap. The spend limit, conversion-delay handling and insufficient-evidence
+outcome are playbook additions; the direct-purchase formula is arithmetic.
+
 ## 2025–2026
 
 | Item on his list | What it is | Access | Main contributions |

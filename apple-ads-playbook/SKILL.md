@@ -34,7 +34,8 @@ dated fact before acting on it.
 - **Check unit economics.** Know the money a new user brings after Apple's fee and VAT
   (proceeds) per trial start or per payer, by country. If that value is tiny (for example
   under ~$1 per US install for a subscription app), paid acquisition will not work; fix
-  monetization first.
+  monetization first. If reliable cohort proceeds are not yet available, use the capped
+  learning workflow A1 below; do not invent an LTV or claim profitable acquisition.
 - **Check the store page.** The listing's conversion rate sets what each install costs you.
   A weak page makes every bid expensive; fix the page before buying traffic.
 - **Never use Apple Ads Basic.** It hides search terms, which are the most valuable data the
@@ -105,6 +106,8 @@ Campaigns per country (or per bundle of similar small countries):
   - Breakeven CPT per keyword = breakeven per start × (trial starts ÷ taps) for that keyword.
   - Compare it with the keyword's **actual average CPT** (spend ÷ taps), not with the bid.
     Apple usually charges less than the bid.
+  - For apps without a trial, use proceeds per payer × (payers ÷ taps) instead. State the
+    payback horizon; do not assume future renewals for a new subscription cohort.
   - Keep a margin: target well below breakeven while data is young.
 - **It is not a second-price auction.** A higher bid can buy the same impressions at a
   higher price. When a keyword holds ≥ 80% first-slot impression share, test a lower bid
@@ -118,7 +121,9 @@ Campaigns per country (or per bundle of similar small countries):
 - **Small samples prove nothing.** One or two trial starts on a keyword is not a verdict.
   Pause a keyword with zero starts only once its spend reaches about 2× the breakeven per
   start; below that, judge tap-through rate and tap→install rate, or judge similar keywords
-  together.
+  together. Allow for the funnel's conversion delay and reporting lag before treating
+  recent taps as zero-start or zero-purchase failures. The approved loss limit still wins:
+  pause spend at the limit and review late conversions afterwards.
 - **CPT spikes in December and around Black Friday** are often giant advertisers buying
   broadly. Check impression share and wait before raising bids.
 
@@ -222,6 +227,9 @@ searches. At scale, Apple Ads is usually 5–20% of an app's marketing spend.
 ## Workflows
 
 ### A. Set up a new app
+For a tiny budget or insufficient revenue history, use A1 instead of launching every
+non-brand campaign category at once.
+
 1. Confirm attribution, unit economics and store page (section 1).
 2. Build the keyword list by intent: brand, competitors, generic short tail, long tail.
 3. One country first. Create Brand, Competitor, Generic (Exact) and Discovery (Broad +
@@ -229,6 +237,30 @@ searches. At scale, Apple Ads is usually 5–20% of an app's marketing spend.
    placement only. A tight daily budget.
 4. First weeks: read tap-through rate and tap→install per keyword; fix the page and title
    from what you learn. No keyword profitability verdicts until starts accumulate.
+
+### A1. Tiny budget or no reliable cohort proceeds
+1. Agree a total learning-spend limit, an end date and the event to measure (trial start
+   or direct purchase). Confirm attribution and the store page first. With unknown LTV,
+   treat bids as experimental costs, not proven breakeven bids; do not scale on that basis.
+2. In one country, narrow to roughly 3–10 extremely relevant Exact keywords, often
+   medium- or low-volume. Research intent and competitors before spending. Keep brand
+   defense separate; this is a narrower non-brand test, not a requirement to fund every
+   campaign category in workflow A.
+3. Optionally add very cheap Discovery within the same total limit, with brand variants
+   and existing Exact keywords excluded. Skip it if it would spread the budget too thin.
+4. Read tap-through rate, tap→install and downstream events. Wait for the chosen event's
+   conversion delay and reporting lag before judging recent cohorts. Stop spending when
+   the approved limit is reached, even if the evidence is still incomplete.
+5. Report one of: enough evidence to propose another bounded test, evidence to stop, or
+   **insufficient evidence**. A spent credit or one purchase does not establish profitability.
+   Do not apply revenue-based stop thresholds when the underlying proceeds are unknown.
+
+Thomas's [small-budget replies](https://x.com/Thomasbcn/status/2120625086034255927) motivate
+this narrower start. His [illustrative conversion chain](https://x.com/Thomasbcn/status/2120625558170058838)
+was 800 clicks → 400 installs → 60 trials → 20 sales, potentially several hundred US dollars
+**per keyword**, before confident measurement. These are not required sample sizes or
+benchmarks. The spend limit, delayed-conversion handling and outcome labels above are
+operating safeguards, not additional claims attributed to Thomas.
 
 ### B. Weekly loop
 1. Spend and cost per tap-through start per campaign, brand and non-brand separately.

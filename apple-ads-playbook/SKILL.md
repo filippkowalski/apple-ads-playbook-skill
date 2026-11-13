@@ -107,7 +107,7 @@ Campaigns per country (or per bundle of similar small countries):
   - Compare it with the keyword's **actual average CPT** (spend ÷ taps), not with the bid.
     Apple usually charges less than the bid.
   - For apps without a trial, use proceeds per payer × (payers ÷ taps) instead. State the
-    payback horizon; do not assume future renewals for a new subscription cohort.
+    payback horizon the proceeds cover (first purchase only, or a stated renewal period).
   - Keep a margin: target well below breakeven while data is young.
 - **It is not a second-price auction.** A higher bid can buy the same impressions at a
   higher price. When a keyword holds ≥ 80% first-slot impression share, test a lower bid
@@ -239,28 +239,25 @@ non-brand campaign category at once.
    from what you learn. No keyword profitability verdicts until starts accumulate.
 
 ### A1. Tiny budget or no reliable cohort proceeds
-1. Agree a total learning-spend limit, an end date and the event to measure (trial start
-   or direct purchase). Confirm attribution and the store page first. With unknown LTV,
-   treat bids as experimental costs, not proven breakeven bids; do not scale on that basis.
-2. In one country, narrow to roughly 3–10 extremely relevant Exact keywords, often
-   medium- or low-volume. Research intent and competitors before spending. Keep brand
-   defense separate; this is a narrower non-brand test, not a requirement to fund every
-   campaign category in workflow A.
-3. Optionally add very cheap Discovery within the same total limit, with brand variants
-   and existing Exact keywords excluded. Skip it if it would spread the budget too thin.
-4. Read tap-through rate, tap→install and downstream events. Wait for the chosen event's
-   conversion delay and reporting lag before judging recent cohorts. Stop spending when
-   the approved limit is reached, even if the evidence is still incomplete.
-5. Report one of: enough evidence to propose another bounded test, evidence to stop, or
-   **insufficient evidence**. A spent credit or one purchase does not establish profitability.
-   Do not apply revenue-based stop thresholds when the underlying proceeds are unknown.
+Thomas's [small-budget approach](https://x.com/Thomasbcn/status/2120625086034255927): two
+non-brand pieces, run together. Brand defense stays separate.
 
-Thomas's [small-budget replies](https://x.com/Thomasbcn/status/2120625086034255927) motivate
-this narrower start. His [illustrative conversion chain](https://x.com/Thomasbcn/status/2120625558170058838)
-was 800 clicks → 400 installs → 60 trials → 20 sales, potentially several hundred US dollars
-**per keyword**, before confident measurement. These are not required sample sizes or
-benchmarks. The spend limit, delayed-conversion handling and outcome labels above are
-operating safeguards, not additional claims attributed to Thomas.
+1. Agree a total learning-spend limit, an end date and the event to measure (trial start
+   or direct purchase). Confirm attribution and the store page. Research intent and
+   competitors for each keyword before spending.
+2. **Narrow Exact test.** In one country, 3–10 extremely relevant Exact keywords, often
+   medium or low volume, each isolated so its data stays separate. Test bid levels until
+   you know revenue per tap, then bid a bit above it; actual CPT usually lands below the bid.
+3. **Cheap Discovery.** Broad + Search Match (Maximize Conversions or not) at a very low
+   bid, with all brand variants and the Exact keywords negated. It works at any budget.
+4. **Cut rules, set before launch.** Per keyword, agree a tap cap: zero starts by then is a
+   hard cut (use this instead of the 2× breakeven rule while proceeds are unknown). Low
+   tap-through rate and an entrenched strong competitor are early warning signs. Allow for
+   conversion delay before cutting; stop all spend at the limit.
+5. Report one of: propose another bounded test, stop, or **insufficient evidence**. A spent
+   credit or one purchase does not prove profitability. Confidence costs far more:
+   Thomas's [napkin example](https://x.com/Thomasbcn/status/2120625558170058838) is 800 taps
+   → 400 installs → 60 trials → 20 sales, several hundred US dollars per keyword in the US.
 
 ### B. Weekly loop
 1. Spend and cost per tap-through start per campaign, brand and non-brand separately.
